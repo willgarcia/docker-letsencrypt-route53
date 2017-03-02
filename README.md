@@ -18,12 +18,19 @@ The dehydrated hook `dehydrated-route53` manages multiple route53 hosted zones. 
 * [Lexicon](https://github.com/AnalogJ/lexicon) - Manipulate DNS records on various DNS providers in a standardized way.
 * [AWS route53 CLI](http://docs.aws.amazon.com/cli/latest/reference/route53/) - Command reference
 
+## Docker image
+- [`latest`/`1` (*Dockerfile*)](https://github.com/willgarcia/docker-letsencrypt-route53/blob/master/Dockerfile)
+
+[![](https://images.microbadger.com/badges/version/willgarcia/letsencrypt.svg)](http://microbadger.com/images/willgarcia/letsencrypt "Get your own version badge on microbadger.com")  [![](https://images.microbadger.com/badges/image/willgarcia/letsencrypt.svg)](http://microbadger.com/images/willgarcia/letsencrypt "Get your own image badge on microbadger.com")
+
+
+
 ## Usage
 
 ```
 $ docker run \
     --env-file letsencrypt.env \
-    willfarrell/letsencrypt \
+    willgarcia/letsencrypt \
     dehydrated
 
 Usage: /usr/bin/dehydrated [-h] [command [argument]] [parameter [argument]] [parameter [argument]] ...
